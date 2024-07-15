@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+}
+
+main {
+  background-color: #F5F5F5;
+  height: 600px;
+  max-width: 1085px;
+  border-radius: 5px;
+  margin-left: 200px;
+  margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   overflow: hidden;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 76px;
+  margin-right: 227px;
+}
+
+.die-face {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.die-num {
+  font-size: 2rem;
+}
+
+button{
+  position: absolute;
+  top: 450px;
+  background-color: blue;
+  color: white;
+  padding: 12px 76px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+  position: relative;
+  top: -264px;
+  left: 494px;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  top: -173px;
+  left: 437px;
+  text-align: justify;
+  margin-left: -169px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+button:hover{
+   transform: scale(1.1 , 1.1);
+  transition: 0.5s;
+}
